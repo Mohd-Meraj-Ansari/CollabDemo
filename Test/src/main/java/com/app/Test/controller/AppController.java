@@ -15,4 +15,9 @@ public class AppController {
 	public String testTwo() {
 		return "test two endpoint";
 	}
+	
+	@GetMapping("/test-3")
+	public String testThree() {
+		return "test three endpoint";
+	}
 }
