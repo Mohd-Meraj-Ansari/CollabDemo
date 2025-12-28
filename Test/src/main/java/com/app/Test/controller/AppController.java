@@ -15,9 +15,19 @@ public class AppController {
 	public String testTwo() {
 		return "test two endpoint";
 	}
+
 	
 	@GetMapping("/test-3")
 	public String testThree() {
 		return "test three endpoint";
+	}
+
+	/*
+	* This endpoint is to get the health of collab-demo microservice
+	**/
+	@GetMapping("/health")
+	public String health() {
+		return "health endpoint";
+
 	}
 }
