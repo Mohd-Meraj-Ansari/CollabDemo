@@ -10,6 +10,11 @@ public class AppController {
 	public String test() {
 		return "test endpoint";
 	}
+	
+	@GetMapping("/test-2")
+	public String testTwo() {
+		return "test two endpoint";
+	}
 
 	@GetMapping("/health")
 	public String health() {
